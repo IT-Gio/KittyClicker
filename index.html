@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <title>Kitty Clicker</title>
+</head>
+<body>
+
+  <div id="game-container">
+    
+    <!-- Left Panel: Upgrades -->
+    <aside id="upgrade-panel">
+      <h2>Upgrades!</h2>
+    <div id="upgrade-cards"><!-- JS will inject upgrades here --></div>
+
+    </aside>
+
+    <!-- Main Area: Click Button -->
+    <main id="click-area">
+        <h2 id="score">Points: 0</h2>
+        <div id="cps">CPS: 0</div>
+
+     
+        <div class="spotlight"></div>
+        <button id="click-button">
+          <img src="button.png" alt="Click" />
+        </button>
+    </main>
+
+    <!-- Right Panel: Extra Upgrades -->
+    <aside id="extra-upgrades">
+      <h2>Extra Upgrades!</h2>
+      <div id="extra-upgrade-cards"></div>
+      <button id="stats-button">Show Stats</button>
+
+      <div id="stats-panel" style="display:none; margin-top: 20px; background: #fff; padding: 10px; border-radius: 8px; max-width: 300px;">
+        <h3>Your Stats</h3>
+        <p><strong>Time Played:</strong> <span id="time-played">0s</span></p>
+        <p><strong>Total Points Spent:</strong> <span id="points-spent">0</span></p>
+        <div>
+          <strong>Upgrades Bought:</strong>
+          <ul id="upgrades-bought-list" style="list-style-type:none; padding-left: 0;"></ul>
+        </div>
+      </div>
+
+
+    </aside>
+
+  </div>
+    <div id="tooltip"></div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
